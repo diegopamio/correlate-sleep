@@ -5,7 +5,7 @@
 var keystone = require('keystone');
 keystone.init({
 
-    'name': 'My Project',
+    'name': 'Correlate Sleep',
 
     'favicon': 'public/favicon.ico',
     'less': 'public',
@@ -15,7 +15,7 @@ keystone.init({
     'view engine': 'jade',
 
     'auto update': true,
-    'mongo': 'mongodb://localhost/correlate-sleep',
+    'mongo': 'mongodb://system:system@ds033059.mongolab.com:33059/heroku_app21984206',
 
     'session': true,
     'auth': true,
