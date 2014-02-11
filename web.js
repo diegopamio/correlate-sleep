@@ -20,7 +20,8 @@ keystone.init({
     'session': true,
     'auth': true,
     'user model': 'User',
-    'cookie secret': '(your secret here)'
+    'cookie secret': '(your secret here)',
+    'port': 80
 
 });
 
