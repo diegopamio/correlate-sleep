@@ -15,7 +15,7 @@ keystone.init({
     'view engine': 'jade',
 
     'auto update': true,
-    'mongo': 'mongodb://system:system@ds033059.mongolab.com:33059/heroku_app21984206',
+    'mongo': process.env.MONGO_URI || 'mongodb://localhost/keystone-demo',
 
     'session': true,
     'auth': true,
