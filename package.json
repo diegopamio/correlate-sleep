@@ -11,6 +11,6 @@
         "npm": "1.3.x"
     },
     "scripts": {
-        "start": "node ./web.js"
+        "start": "sudo node ./web.js"
     }
 }
