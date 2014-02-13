@@ -4,31 +4,14 @@
 
 require('protractor');
 
-var sauceConnectLauncher = require('sauce-connect-launcher'),
-    options = {
-        username: "diego_pamio",
-        userkey: '610a8049-7d40-4e17-a381-944bf4b19898',
-        verbose: false,
-        logfile: null, //optionally change sauce connect logfile location
-        tunnelIdentifier: null, // optionally identity the tunnel for concurrent tunnels
-        fastFailRexegps: null, // an array or comma-separated list of regexes whose matches will not go through the tunnel
-        directDomains: null, // an array or comma-separated list of domains that will not go through the tunnel
-        logger: console.log
-    };
+sauceConnect = require('sauce-connect');
 
+sauceConnect.launch('diego_pamio', '610a8049-7d40-4e17-a381-944bf4b19898', function (){
+    console.log("READY TO START TESTS");
+
+});
 
 describe('angularjs homepage', function () {
-
-    beforeEach(function () {
-        sauceConnectLauncher(options, function (err, sauceConnectProcess) {
-            console.log("Started Sauce Connect Process");
-            sauceConnectProcess.close(function () {
-                console.log("Closed Sauce Connect process");
-            });
-
-        });
-    });
-
 
     it('should greet the named user', function() {
         // Load the AngularJS homepage.

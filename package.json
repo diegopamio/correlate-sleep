@@ -6,7 +6,8 @@
     "keystone": "latest",
     "underscore": "latest",
     "protractor": "~0.18.1",
-    "sauce-connect-launcher": "~0.2.2"
+    "sauce-connect-launcher": "~0.2.2",
+    "sauce-connect": "~0.1.1"
   },
   "engines": {
     "node": "0.10.x",

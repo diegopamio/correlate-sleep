@@ -6,7 +6,9 @@ This is an app that correlates every event in your life with your sleep performa
 Build Status
 ============
 
-![Screenshot](https://www.codeship.io/projects/87f9cfc0-71b6-0131-fc05-5a67fc99b3ee/status)
+[ ![Codeship Status for diegopamio/correlate-sleep](https://www.codeship.io/projects/87f9cfc0-71b6-0131-fc05-5a67fc99b3ee/status?branch=master)](https://www.codeship.io/projects/13590)
+
+[![Code Climate](https://codeclimate.com/github/diegopamio/correlate-sleep.png)](https://codeclimate.com/github/diegopamio/correlate-sleep)
 
 Getting Started
 ===============
