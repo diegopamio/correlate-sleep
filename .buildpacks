@@ -1,0 +1,4 @@
+git://github.com/heroku/heroku-buildpack-ruby.git
+git://github.com/johnbeynon/heroku-buildpack-wget.git
+git://github.com/heroku/heroku-buildpack-ruby.git
+git://github.com/davidlibrera/heroku-buildpack-unzip.git
