@@ -9,7 +9,7 @@ exports.config = {
     capabilities: {
         'browserName': 'chrome',
         'name': process.env.CI_MESSAGE,
-        'build': process.env.CI_BUILD_NUMBER + ' (' + process.env.CI_COMMIT_ID + ')'
+        'build': process.env.CI_BUILD_NUMBER + ' (' + process.env.CI_COMMIT_ID.substring(0, 7) + ')'
     },
 
     specs: ['*-spec.js'],

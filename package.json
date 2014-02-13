@@ -5,7 +5,8 @@
   "dependencies": {
     "keystone": "latest",
     "underscore": "latest",
-    "protractor": "~0.18.1"
+    "protractor": "~0.18.1",
+    "sauce-connect-launcher": "~0.2.2"
   },
   "engines": {
     "node": "0.10.x",
