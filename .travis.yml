@@ -5,3 +5,4 @@ addons:
   sauce_connect:
     username: "diego_pamio"
     access_key: "610a8049-7d40-4e17-a381-944bf4b19898"
+before_script: npm start
