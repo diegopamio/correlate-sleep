@@ -13,6 +13,6 @@
   },
   "scripts": {
     "start": "node web.js",
-    "test": "protractor tests/config.js"
+    "test": "node web.js; protractor tests/config.js"
   }
 }
