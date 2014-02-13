@@ -8,19 +8,21 @@ require('coffee-script');
 
 
 describe('angularjs homepage', function () {
+    "use strict";
+    var readyToTest = false;
 
     it('should greet the named user', function () {
 
-        sauceConnect = require('sauce-connect');
+        var sauceConnect = require('sauce-connect');
 
         runs(function () {
             sauceConnect.launch('diego_pamio', '610a8049-7d40-4e17-a381-944bf4b19898', function () {
-                readeyToTest = true;
+                readyToTest = true;
             });
 
         });
         waitsFor(function () {
-            return readeyToTest;
+            return readyToTest;
         }, "Not able to execute sauce-connect", 8000);
 
         runs(function () {
