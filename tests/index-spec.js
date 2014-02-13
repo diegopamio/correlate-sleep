@@ -14,8 +14,7 @@ var sauceConnectLauncher = require('sauce-connect-launcher'),
         fastFailRexegps: null, // an array or comma-separated list of regexes whose matches will not go through the tunnel
         directDomains: null, // an array or comma-separated list of domains that will not go through the tunnel
         logger: console.log
-    },
-    scp;
+    };
 
 
 describe('angularjs homepage', function () {
@@ -23,16 +22,13 @@ describe('angularjs homepage', function () {
     beforeEach(function () {
         sauceConnectLauncher(options, function (err, sauceConnectProcess) {
             console.log("Started Sauce Connect Process");
-            scp = sauceConnectProcess;
+            sauceConnectProcess.close(function () {
+                console.log("Closed Sauce Connect process");
+            });
+
         });
     });
 
-
-    afterEach(function () {
-        scp.close(function () {
-            console.log("Closed Sauce Connect process");
-        });
-    });
 
     it('should greet the named user', function() {
         // Load the AngularJS homepage.
