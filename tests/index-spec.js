@@ -6,14 +6,16 @@ require('protractor');
 
 require('coffee-script');
 
-//sauceConnect = require('sauce-connect');
-//
-//sauceConnect.launch('diego_pamio', '610a8049-7d40-4e17-a381-944bf4b19898', function () {
-//    console.log("READY TO START TESTS");
-//
-//});
 
 describe('angularjs homepage', function () {
+    beforeEach(function () {
+        sauceConnect = require('sauce-connect');
+
+        sauceConnect.launch('diego_pamio', '610a8049-7d40-4e17-a381-944bf4b19898', function () {
+            console.log("READY TO START TESTS");
+
+        });
+    });
 
     it('should greet the named user', function () {
         // Load the AngularJS homepage.
