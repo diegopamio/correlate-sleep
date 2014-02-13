@@ -1,6 +1,8 @@
 /**
  * Created by dpamio on 12/02/14.
  */
+
+
 describe('angularjs homepage', function() {
     it('should greet the named user', function() {
         // Load the AngularJS homepage.
