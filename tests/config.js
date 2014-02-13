@@ -11,7 +11,7 @@ exports.config = {
         'name': process.env.CI_MESSAGE || 'Ad hoc message',
         'build': process.env.CI_BUILD_NUMBER + ' (' + (process.env.CI_COMMIT_ID || "No comments.").substring(0, 7) + ')'
     },
-
+    baseUrl: 'http://' + (process.env.IP || 'localhost') + ':' + (process.env.PORT || '3000') + '/',
     specs: ['*-spec.js'],
     verbose: true,
 
