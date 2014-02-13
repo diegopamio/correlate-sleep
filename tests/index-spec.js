@@ -23,7 +23,7 @@ describe('angularjs homepage', function () {
         });
         waitsFor(function () {
             return readyToTest;
-        }, "Not able to execute sauce-connect", 8000);
+        }, "Not able to execute sauce-connect", 80000);
 
         runs(function () {
             browser.get('http://localhost:3000/');
