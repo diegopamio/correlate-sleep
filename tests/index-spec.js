@@ -4,16 +4,18 @@
 
 require('protractor');
 
+require('coffee-script');
+
 sauceConnect = require('sauce-connect');
 
-sauceConnect.launch('diego_pamio', '610a8049-7d40-4e17-a381-944bf4b19898', function (){
+sauceConnect.launch('diego_pamio', '610a8049-7d40-4e17-a381-944bf4b19898', function () {
     console.log("READY TO START TESTS");
 
 });
 
 describe('angularjs homepage', function () {
 
-    it('should greet the named user', function() {
+    it('should greet the named user', function () {
         // Load the AngularJS homepage.
         browser.get('http://www.angularjs.org');
 
