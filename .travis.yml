@@ -1,0 +1,7 @@
+ language: node_js
+ node_js:
+   - "0.10"
+   - "0.8"
+   - "0.6"
+ before_script:
+   - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
