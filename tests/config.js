@@ -7,14 +7,13 @@ exports.config = {
     sauceKey: '610a8049-7d40-4e17-a381-944bf4b19898',
 
     // Capabilities to be passed to the webdriver instance.
-    capabilities: {
-        'browserName': 'chrome',
-        'proxy': {
-            'proxyType': 'manual',
-            'httpProxy': 'http://proxy-us.intel.com:911',
-            'httpsProxy': 'http://proxy-us.intel.com:911'
-        }
-    },
+    capabilities: [{
+        "browserName": "firefox",
+        "count": 1
+    }, {
+        "browserName": "chrome",
+        "count": 1
+    }],
 
     // Spec patterns are relative to the location of the spec file. They may
     // include glob patterns.
