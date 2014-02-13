@@ -26,7 +26,7 @@ describe('angularjs homepage', function () {
         }, "Not able to execute sauce-connect", 80000);
 
         runs(function () {
-            browser.get('http://localhost/');
+            browser.get('http://localhost:3000');
             expect(element(by.id('header'))).toEqual('My Keystone Website');
         });
     });
