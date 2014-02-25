@@ -1,0 +1,22 @@
+{
+  "name": "correlate-sleep",
+  "version": "0.0.0",
+  "authors": [
+    "Diego Pamio (Intel) <diego.pamio@intel.com>"
+  ],
+  "description": "Client correlate-sleep app",
+  "main": "views/layout.jade",
+  "license": "MIT",
+  "homepage": "http://correlate.heroku.com/sleep",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.13"
+  }
+}

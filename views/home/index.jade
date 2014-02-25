@@ -1,0 +1,9 @@
+extends ../layout
+
+block styles
+
+block body
+    h1#title Hello World
+    div(ng-ctrl='AppCtrl')
+        input(type='text', data-ng-model='name')
+        | {{name}}
