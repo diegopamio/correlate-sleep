@@ -10,7 +10,7 @@ var expect = chai.expect;
 
 describe('homepage', function() {
     it('should have a hello world', function() {
-        browser.get('/');
+        browser.get('http://localhost:8080/');
         var greeting = element(by.id('title'));
         expect(greeting.getText()).to.eventually.equal("Hello World");
     });
