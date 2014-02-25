@@ -34,7 +34,7 @@ var configDev = extend({
         'build': "N/A"
     },
     verbose: true,
-    baseUrl: 'http://localhost:8080/'
+    baseUrl: 'http://localhost:1337/'
 }, genericConfig);
 
 exports.config = process.env.NODE_ENV == "production" ? configProd : configDev;
