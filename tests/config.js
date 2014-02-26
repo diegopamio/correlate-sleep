@@ -29,6 +29,7 @@ var configProd = extend({
         'build': process.env.CI_BUILD_NUMBER + ' (' + (process.env.CI_COMMIT_ID || "No comments.").substring(0, 7) + ')',
         'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER
     }, {
+        'browerName' : 'iphone',
         'platform' : 'OS X 10.9',
         'version' : 7,
         'device-orientation' : 'portrait',
