@@ -10,6 +10,15 @@ Build Status
 
 [![Code Climate](https://codeclimate.com/github/diegopamio/correlate-sleep.png)](https://codeclimate.com/github/diegopamio/correlate-sleep)
 
+Test Status
+===========
+
+[![Selenium Test Status](https://saucelabs.com/buildstatus/diego_pamio)](https://saucelabs.com/u/diego_pamio)
+
+Detailed:
+
+[![Selenium Test Status Matrix](https://saucelabs.com/browser-matrix/diego_pamio.svg)](https://saucelabs.com/u/diego_pamio)
+
 Getting Started
 ===============
 
